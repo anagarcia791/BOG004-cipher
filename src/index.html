@@ -1,14 +1,53 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
-    <script src="index.js" type="module"></script>
-  </body>
+<html lang='es'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Secret Agent</title>
+        <link rel='stylesheet' href='style.css' /> <!-- Manera de traer estilos-->
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    </head>  
+
+    <body>
+        <!--CONTENEDOR SALUDO/TITULO-->
+        <div id='contenedorSaludo' class='display_block'>
+            <h1>Secret Agent</h1>
+        </div>
+
+        <!--CONTENEDOR DIFICULTAD-->
+        <div class='saludo-contenido' class='display_block'>
+            <form  id='formularioDificultad' >
+                <p class='pDescripcion'> Este es un juego que consiste en adivinar el agente secreto, </br>
+                de los personajes de Phineas y Ferb</p>
+                </br>
+                <label> Selecciona dificultad </label>
+                <input type= 'number' min='1' max='20' required id='inputDificultad'>
+                </br>
+                <button id='botonDificultad' form='formularioDificultad' class='botDificultad'> Vamos a jugar! </button>
+                </br>
+                <p class='pNoValido' id='avisoNivelNoValido'></p>
+            </form>
+        </div>
+
+        <!--CONTENEDOR PALABRA SECRETA-->
+        <div class='juego display_none' >
+            <div class='juego-contenido'>
+                <div id='contenedorSecreto' >
+                    <div  class='contSecreto'>
+                        <h2>Pistas</h2>
+                        <ul id='pistasJuego'></ul>
+                        <br/>
+                        <span id='secreto'></span>
+                    </div>
+                </div>
+
+                <div id='contenedorEntradaJugador'>
+                </div>
+            </div>
+            <button id='botonDescubrir' class='botDescubrir'> Descubrir </button>
+        </div> 
+
+        <script  type='module'  src='./index.js'></script>  
+
+    </body>
 </html>

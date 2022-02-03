@@ -1,0 +1,220 @@
+/* estilo para ocultar mostrar*/
+.display_none {
+    display: none !important;
+}
+
+.display_block {
+    display: block !important;
+}
+
+/*estilo para fondo*/
+body{
+    width: 95vw;
+    height: 80vh;
+    background-image: url(BACKG.png);
+}
+
+/*estilo para H1*/
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    font-family: Jolly Lodger;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    color: #8913F7;
+}
+
+/*estilo para H2*/
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Jolly Lodger;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: #9e1bf5;
+}
+
+/*estilo pag inicial*/
+.saludo-contenido{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column; 
+} 
+
+#formularioDificultad{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+/*estilo dificultad juego*/
+form{
+    width: 50%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    place-items: center; 
+    padding: 15px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+/*estilo aviso nivel invalido*/
+.pNoValido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-items: center;  
+    font-weight: bold; 
+    color:#2a13f7;
+}
+
+.pDescripcion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-items: center;  
+    font-weight: bold; 
+    font-size: 20px;
+    color:#9e1bf5;
+}
+
+/*estilo bot dificultad*/
+.botDificultad{
+    /* width: 80px;
+    height: 60px;
+    order: 1; */
+    background: #8913F7;
+    color:whitesmoke;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    width: 100px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    justify-self: center;
+}
+
+/*estilo segunda pag juego*/
+.juego{
+    width: 100vw; /* ocupa todo ancho de pantalla */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+}  
+
+/*estilo que contiene pistas e input esperado*/
+.juego-contenido{
+    display: flex;
+    gap: 30px;
+}
+
+/*estilo para lista de pistas*/
+.contSecreto{
+    width: 250px;
+    height: 260px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(203, 168, 236, 0.3);
+    border: 3px solid #8913F7;
+    border-radius: 8px;
+}
+
+/*estilo para input esperado*/
+#contenedorEntradaJugador{
+    width: 250px;
+    height: 260px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #8913F7;
+    border-radius: 8px;
+}
+
+/*estilo para input de jugador*/
+#contenedorEntradaJugador input{
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+}
+
+/*estilo bot descubrir*/
+.botDescubrir{
+    width: 100px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    padding: 0;
+    background: #8913F7;
+    color:whitesmoke;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+/*estilo tercera pag resultado*/
+.resultado-contenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+/*estilo resultado final*/
+.resultadoFinal{
+    width: 350px;
+    height: 360px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(203, 168, 236, 0.3);
+    border: 3px solid #8913F7;
+    border-radius: 8px;
+} 
+
+.resultadoFinal p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-items: center;  
+    font-weight: normal; 
+    font-size: 18px;
+    color:#1a191b;
+}
+
+.resultadoFinal span{
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-weight: normal; 
+    font-size: 18px;
+    color:#1a191b;
+}
